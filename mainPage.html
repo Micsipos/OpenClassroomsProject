@@ -13,19 +13,21 @@
 </head>
 <body>
     <header>
-        <a href="mainPage.html"><img src="images\logo\ohmyfood.png" alt="logo"></a>
-        <i class="fa-sharp fa-solid fa-location-dot">Paris, Belleville</i>
-        <h2>Book the menu you like</h2>
-        <p>Discover top-of-the-art restaurants we picked for you </p>
-        <button>Explore our restaurants</button>
+        <a href="mainPage.html"><img class="imgHeader" src="images\logo\ohmyfood.png" alt="logo"></a>
+        <div class="location"><i class="fa-sharp fa-solid fa-location-dot"></i>Paris, Belleville</div>
+        <div class="discover">
+            <h2>Book the menu you like</h2>
+            <div>Discover top-of-the-art restaurants we picked for you </div>
+            <button class="exploreBt">Explore our restaurants</button>
+        </div>
     </header>
-    <div id="howItWorks">
+    <div class="howItWorks">
         <h2>How it works</h2>
-        <button>1 <i class="fa-solid fa-mobile-screen-button">Chose a restaurant</i></button>
-        <button>2 <i class="fa-solid fa-list-ul">Create my menu</i></button>
-        <button>3 <i class="fa-solid fa-store"></i>Go enjoy it at the restaurant </button>
+        <div><span class="number">1</span><button> <i class="fa-solid fa-mobile-screen-button"></i>Chose a restaurant</button></div>
+        <div><span class="number">2</span><button> <i class="fa-solid fa-list-ul"></i>Create my menu</button></div>
+        <div><span class="number">3</span><button> <i class="fa-solid fa-store"></i>Go enjoy it at the restaurant </button></div>
     </div>
-    <div id="restaurantSection">
+    <div class="restaurantSection">
         <a href="theFullPallette.html" class="card">
             <img src="images\restaurants\jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurantImg" style="width:150px; height:120px;">
             <div class="container">
@@ -53,7 +55,7 @@
 
     </div>
     <footer>
-        <img src="images\logo\ohmyfood.png" alt="logo">
+        <img class="imgFooter" src="images\logo\ohmyfood.png" alt="logo">
         <span><i class="fa-solid fa-utensils"></i>Suggest a restaurant</span>
         <span><i class="fa-regular fa-handshake"></i> Become a partner</span>
         <span>Legal</span>

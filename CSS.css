@@ -1,0 +1,78 @@
+body {
+  display: block;
+  text-align: center;
+  justify-content: center;
+  width: 350px;
+}
+
+header {
+  display: inline-block;
+}
+header .imgHeader {
+  width: 200px;
+  height: 35px;
+  margin: 20px;
+}
+header .location {
+  font-size: large;
+  background-color: rgb(227, 225, 225);
+  padding: 15px;
+}
+header .location .fa-location-dot {
+  margin-right: 10px;
+}
+header .discover {
+  padding: 10px;
+  padding-bottom: 30px;
+  background-color: rgb(245, 245, 245);
+}
+header .discover div {
+  font-size: medium;
+  margin: 20px;
+}
+header .discover .exploreBt {
+  background-color: #9356DC;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 100px;
+  font-size: medium;
+}
+header .discover .exploreBt:hover {
+  cursor: pointer;
+  background-color: #FF79DA;
+}
+
+.howItWorks {
+  text-align: left;
+  justify-content: center;
+}
+.howItWorks span {
+  position: relative;
+  left: 15px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  padding: 2px;
+  padding-right: 6px;
+  padding-left: 6px;
+  color: white;
+}
+.howItWorks button {
+  width: 300px;
+  margin: 5px;
+  padding: 7.5px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+.howItWorks button:hover {
+  cursor: pointer;
+  background-color: #e6d7f7;
+}
+.howItWorks button:hover .fa-solid {
+  color: #9356DC;
+}
+.howItWorks button .fa-solid {
+  margin: 15px;
+}/*# sourceMappingURL=CSS.css.map */
