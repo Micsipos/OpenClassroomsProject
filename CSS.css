@@ -1,8 +1,11 @@
 body {
-  display: block;
+  display: flex;
+  flex-flow: column wrap;
   text-align: center;
   justify-content: center;
-  width: 350px;
+  max-width: 350px;
+  min-width: 300px;
+  font-family: roboto;
 }
 
 header {
@@ -130,4 +133,24 @@ header .discover .exploreBt:hover {
 }
 .restaurantSection .card .container .fa-heart:hover {
   color: #9356DC;
+}
+
+footer {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: left;
+  background-color: rgb(64, 64, 64);
+  padding: 15px;
+  color: white;
+  row-gap: 5px;
+}
+footer .imgFooter {
+  width: 100px;
+  height: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  filter: grayscale(1) invert(1);
+}
+footer span:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=CSS.css.map */

@@ -3,11 +3,13 @@ $secondary: #FF79DA;
 $tertialy: #99E2D0;
 
 body {
-    display: block;
+    display: flex;
+    flex-flow: column wrap;
     text-align: center;
     justify-content: center;
-    width: 350px;
-    
+    max-width: 350px;
+    min-width: 300px;
+    font-family: roboto;
     
 }
 
@@ -106,13 +108,13 @@ header {
 .restaurantSection{
     
     display: flex;
-        flex-basis: 350px;
-        flex-flow: column wrap;
-        align-content: center;
-        font-weight: bolder;
-        row-gap: 20px;
-        background-color: rgb(245, 245, 245);
-        padding-bottom: 60px;
+    flex-basis: 350px;
+    flex-flow: column wrap;
+    align-content: center;
+    font-weight: bolder;
+    row-gap: 20px;
+    background-color: rgb(245, 245, 245);
+    padding-bottom: 60px;
     h2{
         text-align: left !important; 
         padding-top: 40px;
@@ -160,5 +162,31 @@ header {
        
     }
 
+
+}
+
+footer {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: left;
+    background-color: rgb(64, 64, 64);
+    padding: 15px;
+    color: white;
+    row-gap: 5px;
+    
+    .imgFooter{
+        width: 100px;
+        height: 20px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        -webkit-filter: grayscale(1) invert(1);
+        filter: grayscale(1) invert(1);
+    }
+
+    span{
+        &:hover{
+            cursor: pointer;
+        }
+    }
 
 }
