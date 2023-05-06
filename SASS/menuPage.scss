@@ -1,0 +1,71 @@
+.menuSection{
+    width: 350px;
+    position: relative;
+    bottom: 30px;
+    text-align: left;
+    background-color: rgb(247, 247, 247);
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    padding: 20px;
+    margin-bottom: -30px;
+    
+    h1{
+        font-weight: 900;
+        .fa-heart{
+            position: relative;
+            left: 50px;
+            font-size: 0.75em;
+        }
+    }
+    .foodOption{
+
+        justify-content: left;
+        
+        .foodContainer{
+
+            margin-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            line-height: 1.5;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            background-color: white;  
+            text-decoration: none; 
+            color: black;
+            border-radius: 10px;
+            &:hover{
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+                cursor: pointer;
+            }
+
+            p{
+                margin: 10px;
+                .money{
+                        text-align: right;
+                    }
+                
+            }
+        }
+
+    }
+
+    button{
+        display: block;
+        margin-top: 35px;
+        margin-bottom: 35px;
+        width: 50%;
+        justify-content: center !important;
+        background-color: $primary;
+        color: white;
+        border:none;
+        padding: 15px;
+        border-radius: 100px;
+        font-size: medium;
+        box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1);
+        &:hover {
+            cursor: pointer;
+            background-color: $secondary;
+        }
+    }
+       
+}

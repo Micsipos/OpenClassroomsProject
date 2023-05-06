@@ -46,6 +46,44 @@ header .discover .exploreBt:hover {
   cursor: pointer;
   background-color: #FF79DA;
 }
+header .imgHeaderRestaurant {
+  width: 200px;
+  height: 35px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+header .fa-arrow-left-long {
+  font-size: 1em;
+  position: relative;
+  bottom: 20px;
+  right: 30px;
+}
+header .restaurantImg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 350px;
+  height: 200px;
+}
+
+footer {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: left;
+  background-color: rgb(64, 64, 64);
+  padding: 15px;
+  color: white;
+  row-gap: 5px;
+}
+footer .imgFooter {
+  width: 100px;
+  height: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  filter: grayscale(1) invert(1);
+}
+footer span:hover {
+  cursor: pointer;
+}
 
 .howItWorks {
   text-align: left;
@@ -97,7 +135,8 @@ header .discover .exploreBt:hover {
   padding-top: 40px;
   margin-bottom: -5px;
 }
-.restaurantSection .card {
+
+.card {
   width: 300px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -106,11 +145,11 @@ header .discover .exploreBt:hover {
   color: black;
   border-radius: 20px;
 }
-.restaurantSection .card:hover {
+.card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
-.restaurantSection .card .imgRestaurant {
+.card .imgRestaurant {
   width: 300px;
   height: 150px;
   -o-object-fit: cover;
@@ -120,37 +159,80 @@ header .discover .exploreBt:hover {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-.restaurantSection .card .container {
+.card .container {
   margin-top: -10px;
   margin-bottom: -10px;
   margin-left: 20px;
   text-align: left;
 }
-.restaurantSection .card .container .fa-heart {
+.card .container .fa-heart {
   position: relative;
   left: 180px;
   bottom: 10px;
 }
-.restaurantSection .card .container .fa-heart:hover {
+.card .container .fa-heart:hover {
   color: #9356DC;
 }
 
-footer {
-  display: flex;
-  flex-flow: column wrap;
+.menuSection {
+  width: 350px;
+  position: relative;
+  bottom: 30px;
   text-align: left;
-  background-color: rgb(64, 64, 64);
-  padding: 15px;
-  color: white;
-  row-gap: 5px;
+  background-color: rgb(247, 247, 247);
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  padding: 20px;
+  margin-bottom: -30px;
 }
-footer .imgFooter {
-  width: 100px;
-  height: 20px;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  filter: grayscale(1) invert(1);
+.menuSection h1 {
+  font-weight: 900;
 }
-footer span:hover {
+.menuSection h1 .fa-heart {
+  position: relative;
+  left: 50px;
+  font-size: 0.75em;
+}
+.menuSection .foodOption {
+  justify-content: left;
+}
+.menuSection .foodOption .foodContainer {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 1.5;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+}
+.menuSection .foodOption .foodContainer:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
+}
+.menuSection .foodOption .foodContainer p {
+  margin: 10px;
+}
+.menuSection .foodOption .foodContainer p .money {
+  text-align: right;
+}
+.menuSection button {
+  display: block;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  width: 50%;
+  justify-content: center !important;
+  background-color: #9356DC;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 100px;
+  font-size: medium;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1);
+}
+.menuSection button:hover {
+  cursor: pointer;
+  background-color: #FF79DA;
 }/*# sourceMappingURL=CSS.css.map */

@@ -1,0 +1,98 @@
+header {
+    display: inline-block;
+
+    .imgHeader{
+        width: 200px;
+        height: 35px;
+        margin: 20px;
+        
+    }
+
+    .location{
+        font-size: large;
+        background-color: rgb(227, 225, 225);
+        padding: 15px;
+
+        .fa-location-dot{
+            margin-right: 10px;
+            
+            
+        }
+    }
+
+    .discover {
+        padding: 10px;
+        padding-bottom: 30px;
+        background-color: rgb(245, 245, 245);
+        div{
+            font-size: medium;
+            margin: 20px;
+        }
+
+        .exploreBt{
+            background-color: $primary;
+            color: white;
+            border:none;
+            padding: 15px;
+            border-radius: 100px;
+            font-size: medium;
+            box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1);
+            &:hover {
+                cursor: pointer;
+                background-color: $secondary;
+
+            }
+        }
+    }
+
+    .imgHeaderRestaurant{
+        
+        width: 200px;
+        height: 35px;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        
+    }
+
+    .fa-arrow-left-long{
+        font-size: 1em;
+        position: relative;
+        bottom: 20px;
+        right: 30px;
+    }
+
+    .restaurantImg{
+        object-fit: cover;
+        width: 350px;
+        height: 200px;
+    }
+}
+
+
+    
+
+footer {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: left;
+    background-color: rgb(64, 64, 64);
+    padding: 15px;
+    color: white;
+    row-gap: 5px;
+    
+    .imgFooter{
+        width: 100px;
+        height: 20px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        -webkit-filter: grayscale(1) invert(1);
+        filter: grayscale(1) invert(1);
+    }
+
+    span{
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+}
