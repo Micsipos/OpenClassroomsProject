@@ -56,12 +56,12 @@ header .fa-arrow-left-long {
   font-size: 1em;
   position: relative;
   bottom: 20px;
-  right: 30px;
+  right: 60px;
 }
 header .restaurantImg {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 350px;
+  width: 385px;
   height: 200px;
 }
 
@@ -189,8 +189,7 @@ footer span:hover {
   font-weight: 900;
 }
 .menuSection h1 .fa-heart {
-  position: relative;
-  left: 50px;
+  float: right;
   font-size: 0.75em;
 }
 .menuSection .foodOption {
@@ -215,12 +214,19 @@ footer span:hover {
 .menuSection .foodOption .foodContainer p {
   margin: 10px;
 }
-.menuSection .foodOption .foodContainer p .money {
-  text-align: right;
+.menuSection .foodOption .foodContainer p .description {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 250px;
+}
+.menuSection .foodOption .foodContainer p .description .money {
+  float: right;
 }
 .menuSection button {
   display: block;
-  margin-top: 35px;
+  margin: 0 auto;
+  margin-top: 50px;
   margin-bottom: 35px;
   width: 50%;
   justify-content: center !important;

@@ -12,8 +12,7 @@
     h1{
         font-weight: 900;
         .fa-heart{
-            position: relative;
-            left: 50px;
+            float: right;
             font-size: 0.75em;
         }
     }
@@ -38,12 +37,19 @@
                 cursor: pointer;
             }
 
-            p{
-                margin: 10px;
-                .money{
-                        text-align: right;
-                    }
+            div{
+                margin: 20px;
                 
+                .description{
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    width:100px; 
+                    .money{
+                        float: right;
+                    }
+                }
+    
             }
         }
 
@@ -51,7 +57,8 @@
 
     button{
         display: block;
-        margin-top: 35px;
+        margin: 0 auto;
+        margin-top: 50px;
         margin-bottom: 35px;
         width: 50%;
         justify-content: center !important;
