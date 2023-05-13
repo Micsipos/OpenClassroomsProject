@@ -11,6 +11,8 @@
     
     h1{
         font-weight: 900;
+        font-family: Shrikhand;
+        font-size: 1.75em;
         .fa-heart{
             float: right;
             font-size: 0.75em;
@@ -21,8 +23,9 @@
         justify-content: left;
         
         .foodContainer{
-
-            margin-bottom: 10px;
+            height: 60px;
+            margin-bottom: 15px;
+            padding-top: 10px;
             padding-left: 10px;
             padding-right: 10px;
             line-height: 1.5;
@@ -38,15 +41,16 @@
             }
 
             div{
-                margin: 20px;
                 
+                width: 320;
                 .description{
                     text-overflow: ellipsis;
                     white-space: nowrap;
                     overflow: hidden;
-                    width:100px; 
+                    width:300px; 
                     .money{
                         float: right;
+                       
                     }
                 }
     

@@ -165,13 +165,22 @@ footer span:hover {
   margin-left: 20px;
   text-align: left;
 }
-.card .container .fa-heart {
-  position: relative;
-  left: 180px;
-  bottom: 10px;
-}
-.card .container .fa-heart:hover {
+.card .container .fa-regular {
+  float: right;
+  margin-right: 20px;
   color: #9356DC;
+}
+.card .container .fa-solid {
+  float: right;
+  margin-right: 20px;
+  color: #9356DC;
+}
+.card .container * > .fa-solid,
+.card .container *:hover > .fa-regular {
+  display: none;
+}
+.card .container *:hover > .fa-solid {
+  display: inline-block;
 }
 
 .menuSection {
@@ -187,6 +196,8 @@ footer span:hover {
 }
 .menuSection h1 {
   font-weight: 900;
+  font-family: Shrikhand;
+  font-size: 1.75em;
 }
 .menuSection h1 .fa-heart {
   float: right;
@@ -196,7 +207,9 @@ footer span:hover {
   justify-content: left;
 }
 .menuSection .foodOption .foodContainer {
-  margin-bottom: 10px;
+  height: 60px;
+  margin-bottom: 15px;
+  padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
   line-height: 1.5;
@@ -211,16 +224,16 @@ footer span:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
-.menuSection .foodOption .foodContainer p {
-  margin: 10px;
+.menuSection .foodOption .foodContainer div {
+  width: 320;
 }
-.menuSection .foodOption .foodContainer p .description {
+.menuSection .foodOption .foodContainer div .description {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  width: 250px;
+  width: 300px;
 }
-.menuSection .foodOption .foodContainer p .description .money {
+.menuSection .foodOption .foodContainer div .description .money {
   float: right;
 }
 .menuSection button {

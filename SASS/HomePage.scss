@@ -87,13 +87,25 @@ h2{
         margin-bottom: -10px;
         margin-left: 20px;
         text-align: left;
-        .fa-heart{
-            position: relative;
-            left: 180px;
-            bottom: 10px;
-            &:hover{
-                color: $primary;
-            }
+
+        .fa-regular{
+            float: right;
+            margin-right: 20px;
+            color: $primary;
+
+        
+        }
+        .fa-solid{
+            float: right;
+            margin-right: 20px;
+            color: $primary;
+        }
+        * > .fa-solid,
+        *:hover > .fa-regular {
+        display: none;
+        }
+        *:hover > .fa-solid {
+        display: inline-block;
         }
     }
 
