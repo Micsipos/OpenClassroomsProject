@@ -1,3 +1,5 @@
+
+
 .howItWorks {
             
     text-align: left;
@@ -89,6 +91,9 @@ h2{
         text-align: left;
 
         .fa-regular{
+            position: relative;
+            bottom: 10px;
+            font-size: larger;
             float: right;
             margin-right: 20px;
             color: $primary;
@@ -96,6 +101,9 @@ h2{
         
         }
         .fa-solid{
+            position: relative;
+            bottom: 10px;
+            font-size: larger;
             float: right;
             margin-right: 20px;
             color: $primary;

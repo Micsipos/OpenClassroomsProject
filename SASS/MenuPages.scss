@@ -47,12 +47,15 @@
                     text-overflow: ellipsis;
                     white-space: nowrap;
                     overflow: hidden;
-                    width:300px; 
-                    .money{
+                    width:250px; 
+                    
+                }
+                .money{
                         float: right;
+                        position: relative;
+                        bottom: 25px;
                        
                     }
-                }
     
             }
         }

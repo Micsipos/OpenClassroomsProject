@@ -65,6 +65,7 @@ header {
         object-fit: cover;
         width: 385px;
         height: 200px;
+        object-position: 0% 65% ;
     }
 }
 
@@ -92,6 +93,12 @@ footer {
     span{
         &:hover{
             cursor: pointer;
+        }
+        .fa-utensils{
+            margin-right: 20px;
+        }
+        .fa-handshake{
+            margin-right: 10px;
         }
     }
 

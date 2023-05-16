@@ -13,6 +13,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <script>
+        window.addEventListener("load", () => {
+            document.querySelector(".loader").classList.add("loader--hidden");
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -24,6 +29,7 @@
             <button class="exploreBt">Explore our restaurants</button>
         </div>
     </header>
+    
     <div class="howItWorks">
         <h2>How it works</h2>
         <div><span class="number">1</span><button> <i class="fa-solid fa-mobile-screen-button"></i>Chose a restaurant</button></div>
@@ -31,6 +37,7 @@
         <div><span class="number">3</span><button> <i class="fa-solid fa-store"></i>Go enjoy it at the restaurant </button></div>
     </div>
     <div class="restaurantSection">
+        <div class="loader "></div>
         <h2>Restaurants</h2>
         <a href="theFullPallette.html" class="card">
             <img src="images\restaurants\jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurantImg" class="imgRestaurant">

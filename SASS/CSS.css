@@ -63,6 +63,8 @@ header .restaurantImg {
      object-fit: cover;
   width: 385px;
   height: 200px;
+  -o-object-position: 0% 65%;
+     object-position: 0% 65%;
 }
 
 footer {
@@ -83,6 +85,12 @@ footer .imgFooter {
 }
 footer span:hover {
   cursor: pointer;
+}
+footer span .fa-utensils {
+  margin-right: 20px;
+}
+footer span .fa-handshake {
+  margin-right: 10px;
 }
 
 .howItWorks {
@@ -166,11 +174,17 @@ footer span:hover {
   text-align: left;
 }
 .card .container .fa-regular {
+  position: relative;
+  bottom: 10px;
+  font-size: larger;
   float: right;
   margin-right: 20px;
   color: #9356DC;
 }
 .card .container .fa-solid {
+  position: relative;
+  bottom: 10px;
+  font-size: larger;
   float: right;
   margin-right: 20px;
   color: #9356DC;
@@ -231,10 +245,12 @@ footer span:hover {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  width: 300px;
+  width: 250px;
 }
-.menuSection .foodOption .foodContainer div .description .money {
+.menuSection .foodOption .foodContainer div .money {
   float: right;
+  position: relative;
+  bottom: 25px;
 }
 .menuSection button {
   display: block;
@@ -254,4 +270,43 @@ footer span:hover {
 .menuSection button:hover {
   cursor: pointer;
   background-color: #FF79DA;
+}
+
+body .restaurantSection .loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 375px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #99E2D0;
+  color: #9356DC;
+  transition: opacity 5s, visibility 5s;
+}
+body .restaurantSection .loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+body .restaurantSection .loader::after {
+  content: "";
+  display: block;
+  position: center;
+  width: 80px;
+  height: 80px;
+  border-style: solid;
+  border-color: #9356DC;
+  border-top-color: #FF79DA;
+  border-width: 10px;
+  border-radius: 50%;
+  animation: load 1.2s linear infinite;
+}
+@keyframes load {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=CSS.css.map */

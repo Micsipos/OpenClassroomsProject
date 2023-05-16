@@ -1,0 +1,50 @@
+body{
+    .restaurantSection{
+        .loader {
+            position: fixed ;
+            top: 0;
+            left: 0;
+            width: 375px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: $tertialy;
+            color: $primary;
+            transition: opacity 5s, visibility 5s;
+            
+        }
+
+        .loader--hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+       
+        .loader::after {
+            content:'';
+            display:block;
+            position: center;
+            width:80px;
+            height:80px;
+            border-style:solid;
+            border-color: $primary;
+            border-top-color:$secondary;
+            border-width: 10px;
+            border-radius:50%;
+            -webkit-animation: load 1.2s linear infinite;
+            animation: load 1.2s linear infinite;
+            
+        } 
+        
+        @-webkit-keyframes load {
+            from {-webkit-transform:rotate(0deg);}
+            to {-webkit-transform:rotate(360deg);}
+        }
+        
+        @keyframes load {
+            from {transform:rotate(0deg);}
+            to {transform:rotate(360deg);}
+        }
+
+    }
+}
