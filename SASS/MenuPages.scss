@@ -21,7 +21,7 @@
     .foodOption{
 
         justify-content: left;
-        --load-time: 1s;
+        
         
         .foodContainer{
             display: flex;
@@ -38,7 +38,9 @@
             text-decoration: none; 
             color: black;
             border-radius: 10px;
-            animation: card-load var(--load-time) ease-in;
+            animation: card-load 200ms linear;
+            animation-fill-mode: both;
+           
             
             &:hover {
                 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -53,6 +55,7 @@
                     padding: 21px;
                     border-top-right-radius: 10px;
                     border-bottom-right-radius: 10px;
+                    animation: icon-slide 1s backwards;
                     .checkIcon{
                         font-size: larger;
                         color: $tertialy;
@@ -78,22 +81,6 @@
                        
             }
 
-            @for $i from 1 through 15 {
-                .foodContainer :nth-child(#{$i}n) {
-                    animation-delay: #{$i * 300ms}s;
-                }
-            }
-
-            @keyframes card-load{
-                0%{
-                transform: translateY (-50px);
-                opacity: 0;
-                }
-                100%{
-                    transform: translateY (0px);
-                    opacity: 1;
-                }
-            }
             .backGround{
                 opacity: 0;
             }
@@ -115,10 +102,13 @@
                 }
             }
             
-            
-        
-            
+               
         }
+        @for $i from 1 through 5 {
+                 :nth-child(#{$i}) {
+                    animation-delay: #{$i * 200ms};
+                }
+            }
     }
 
     button{
@@ -139,6 +129,16 @@
             cursor: pointer;
             opacity: .85;
             box-shadow: rgba(0, 1, 0, .2) 0 2px 8px;
+        }
+    }
+    @keyframes card-load{
+        0%{
+        transform: translateY (-50px);
+        opacity: 0;
+        }
+        100%{
+            transform: translateY (0px);
+            
         }
     }
 

@@ -220,7 +220,6 @@ footer span .fa-handshake {
 }
 .menuSection .foodOption {
   justify-content: left;
-  --load-time: 1s;
 }
 .menuSection .foodOption .foodContainer {
   display: flex;
@@ -237,7 +236,8 @@ footer span .fa-handshake {
   text-decoration: none;
   color: black;
   border-radius: 10px;
-  animation: card-load var(--load-time) ease-in;
+  animation: card-load 200ms linear;
+  animation-fill-mode: both;
 }
 .menuSection .foodOption .foodContainer:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -254,6 +254,7 @@ footer span .fa-handshake {
   padding: 21px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  animation: icon-slide 1s backwards;
 }
 .menuSection .foodOption .foodContainer:hover .backGround .checkIcon {
   font-size: larger;
@@ -274,61 +275,6 @@ footer span .fa-handshake {
   max-width: 200px;
   min-width: none;
 }
-.menuSection .foodOption .foodContainer .foodContainer :nth-child(1n) {
-  animation-delay: 300mss;
-}
-.menuSection .foodOption .foodContainer .foodContainer :nth-child(2n) {
-  animation-delay: 600mss;
-}
-.menuSection .foodOption .foodContainer .foodContainer :nth-child(3n) {
-  animation-delay: 900mss;
-}
-.menuSection .foodOption .foodContainer .foodContainer :nth-child(4n) {
-  animation-delay: 1200mss;
-}
-.menuSection .foodOption .foodContainer .foodContainer :nth-child(5n) {
-  animation-delay: 1500mss;
-}
-.menuSection .foodOption .foodContainer .foodContainer :nth-child(6n) {
-  animation-delay: 1800mss;
-}
-.menuSection .foodOption .foodContainer .foodContainer :nth-child(7n) {
-  animation-delay: 2100mss;
-}
-.menuSection .foodOption .foodContainer .foodContainer :nth-child(8n) {
-  animation-delay: 2400mss;
-}
-.menuSection .foodOption .foodContainer .foodContainer :nth-child(9n) {
-  animation-delay: 2700mss;
-}
-.menuSection .foodOption .foodContainer .foodContainer :nth-child(10n) {
-  animation-delay: 3000mss;
-}
-.menuSection .foodOption .foodContainer .foodContainer :nth-child(11n) {
-  animation-delay: 3300mss;
-}
-.menuSection .foodOption .foodContainer .foodContainer :nth-child(12n) {
-  animation-delay: 3600mss;
-}
-.menuSection .foodOption .foodContainer .foodContainer :nth-child(13n) {
-  animation-delay: 3900mss;
-}
-.menuSection .foodOption .foodContainer .foodContainer :nth-child(14n) {
-  animation-delay: 4200mss;
-}
-.menuSection .foodOption .foodContainer .foodContainer :nth-child(15n) {
-  animation-delay: 4500mss;
-}
-@keyframes card-load {
-  0% {
-    transform: translateY -50px;
-    opacity: 0;
-  }
-  100% {
-    transform: translateY 0px;
-    opacity: 1;
-  }
-}
 .menuSection .foodOption .foodContainer .backGround {
   opacity: 0;
 }
@@ -347,6 +293,21 @@ footer span .fa-handshake {
   position: relative;
   bottom: 25px;
   margin-right: 5px;
+}
+.menuSection .foodOption :nth-child(1) {
+  animation-delay: 200ms;
+}
+.menuSection .foodOption :nth-child(2) {
+  animation-delay: 400ms;
+}
+.menuSection .foodOption :nth-child(3) {
+  animation-delay: 600ms;
+}
+.menuSection .foodOption :nth-child(4) {
+  animation-delay: 800ms;
+}
+.menuSection .foodOption :nth-child(5) {
+  animation-delay: 1000ms;
 }
 .menuSection button {
   display: block;
@@ -367,6 +328,15 @@ footer span .fa-handshake {
   cursor: pointer;
   opacity: 0.85;
   box-shadow: rgba(0, 1, 0, 0.2) 0 2px 8px;
+}
+@keyframes card-load {
+  0% {
+    transform: translateY -50px;
+    opacity: 0;
+  }
+  100% {
+    transform: translateY 0px;
+  }
 }
 
 body .restaurantSection .loader {
