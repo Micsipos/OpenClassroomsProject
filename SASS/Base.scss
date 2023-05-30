@@ -1,9 +1,10 @@
 body {
-    display: flex;
+    display: block;
     flex-flow: column wrap;
     text-align: center;
     justify-content: center;
-    max-width: 350px;
-    min-width: 300px;
+    width: 350px;
+    margin: auto;
+    margin-right: 5px;
     font-family: roboto;
 }
