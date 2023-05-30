@@ -238,6 +238,7 @@ footer span .fa-handshake {
   border-radius: 10px;
   animation: card-load 200ms linear;
   animation-fill-mode: both;
+  overflow: hidden;
 }
 .menuSection .foodOption .foodContainer:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -247,23 +248,23 @@ footer span .fa-handshake {
   position: relative;
   opacity: 1;
   bottom: 10px;
-  left: 10px;
+  left: 60px;
   height: -moz-fit-content;
   height: fit-content;
   background-color: #99E2D0;
   padding: 21px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  animation: icon-slide 1s backwards;
+  animation: icon-slide 1s forwards;
 }
 .menuSection .foodOption .foodContainer:hover .backGround .checkIcon {
   font-size: larger;
   color: #99E2D0;
   background-color: white;
   border-radius: 50%;
-  padding: 5px;
   padding-left: 8px;
   padding-right: 8px;
+  animation: checkmark-spin 1s linear 1;
 }
 .menuSection .foodOption .foodContainer:hover div {
   width: 90%;
@@ -272,11 +273,17 @@ footer span .fa-handshake {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  max-width: 200px;
   min-width: none;
+  animation: descriptionMove 1s forwards;
+}
+.menuSection .foodOption .foodContainer:hover div .money {
+  animation: moneyMove 1s forwards;
 }
 .menuSection .foodOption .foodContainer .backGround {
   opacity: 0;
+}
+.menuSection .foodOption .foodContainer .checkIcon {
+  display: inline-block;
 }
 .menuSection .foodOption .foodContainer div {
   width: 90%;
@@ -336,6 +343,38 @@ footer span .fa-handshake {
   }
   100% {
     transform: translateY 0px;
+  }
+}
+@keyframes icon-slide {
+  0% {
+    transform: translateX(25px);
+  }
+  100% {
+    transform: translateX(-49px);
+  }
+}
+@keyframes checkmark-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes moneyMove {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes descriptionMove {
+  0% {
+    width: 250px;
+  }
+  100% {
+    width: 200px;
   }
 }
 
