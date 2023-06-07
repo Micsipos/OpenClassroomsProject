@@ -1,9 +1,9 @@
 body {
-  display: flex;
+  display: block;
   flex-flow: column wrap;
   text-align: center;
   justify-content: center;
-  max-width: 350px;
-  min-width: 300px;
+  width: 350px;
+  margin: 0 auto;
   font-family: roboto;
 }/*# sourceMappingURL=Base.css.map */

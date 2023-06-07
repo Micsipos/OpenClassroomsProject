@@ -1,12 +1,11 @@
 body{
     .restaurantSection{
         .loader {
-            position: fixed ;
+            position: fixed;
             top: 0;
-            left: 0;
             width: 350px;
             height: 100%;
-            margin-left: 9px;
+            margin: 0 auto;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -24,7 +23,6 @@ body{
         .loader::after {
             content:'';
             display:block;
-            position: center;
             width:80px;
             height:80px;
             border-style:solid;

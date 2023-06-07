@@ -1,10 +1,10 @@
 body {
-  display: flex;
+  display: block;
   flex-flow: column wrap;
   text-align: center;
   justify-content: center;
-  max-width: 350px;
-  min-width: 300px;
+  width: 350px;
+  margin: 0 auto;
   font-family: roboto;
 }
 
@@ -273,7 +273,6 @@ footer span .fa-handshake {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  min-width: none;
   animation: descriptionMove 1s forwards;
 }
 .menuSection .foodOption .foodContainer:hover div .money {
@@ -293,7 +292,6 @@ footer span .fa-handshake {
   white-space: nowrap;
   overflow: hidden;
   max-width: 250px;
-  min-width: none;
 }
 .menuSection .foodOption .foodContainer div .money {
   float: right;
@@ -338,11 +336,11 @@ footer span .fa-handshake {
 }
 @keyframes card-load {
   0% {
-    transform: translateY -50px;
+    transform: translateY(-50px);
     opacity: 0;
   }
   100% {
-    transform: translateY 0px;
+    transform: translateY(0px);
   }
 }
 @keyframes icon-slide {
@@ -381,10 +379,9 @@ footer span .fa-handshake {
 body .restaurantSection .loader {
   position: fixed;
   top: 0;
-  left: 0;
   width: 350px;
   height: 100%;
-  margin-left: 9px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -399,7 +396,6 @@ body .restaurantSection .loader--hidden {
 body .restaurantSection .loader::after {
   content: "";
   display: block;
-  position: center;
   width: 80px;
   height: 80px;
   border-style: solid;

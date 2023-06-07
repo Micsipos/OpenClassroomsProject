@@ -77,7 +77,7 @@
                         text-overflow: ellipsis;
                         white-space: nowrap;
                         overflow: hidden;
-                        min-width: none;
+                        
                         animation: descriptionMove 1s forwards; 
                         
                     }
@@ -101,7 +101,7 @@
                     white-space: nowrap;
                     overflow: hidden;
                     max-width:250px;
-                    min-width: none;  
+                      
                 }
 
                 .money{
@@ -143,11 +143,11 @@
     }
     @keyframes card-load{
         0%{
-            transform: translateY (-50px);
+            transform: translateY(-50px);
             opacity: 0;
         }
         100%{
-            transform: translateY (0px);
+            transform: translateY(0px);
             
         }
     }
