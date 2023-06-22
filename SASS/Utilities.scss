@@ -1,49 +1,69 @@
 body{
-    .restaurantSection{
-        .loader {
-            position: fixed;
-            top: 0;
-            width: 350px;
-            height: 100%;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: white;
-            color: $primary;
-            transition: opacity 3s, visibility 3s;
+    
+    .loader {
+        position: fixed;
+        top: 0;
+        width: 350px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        color: $primary;
+        animation: timer 3s ease-in-out;
+        animation-duration: 3000ms;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
             
-        }
-
-        .loader--hidden {
-            opacity: 0;
-            visibility: hidden;
-        }
-       
-        .loader::after {
-            content:'';
-            display:block;
-            width:80px;
-            height:80px;
-            border-style:solid;
-            border-color: $primary;
-            border-top-color:$secondary;
-            border-width: 10px;
-            border-radius:50%;
-            -webkit-animation: load 1.2s linear infinite;
-            animation: load 1.2s linear infinite;
-            
-        } 
-        
-        @-webkit-keyframes load {
-            from {-webkit-transform:rotate(0deg);}
-            to {-webkit-transform:rotate(360deg);}
-        }
-        
-        @keyframes load {
-            from {transform:rotate(0deg);}
-            to {transform:rotate(360deg);}
-        }
-
     }
+
+       
+    .loader::after {
+        content:'';
+        display:block;
+        width:80px;
+        height:80px;
+        border-style:solid;
+        border-color: $primary;
+        border-top-color:$secondary;
+        border-width: 10px;
+        border-radius:50%;
+        -webkit-animation: load 1.2s linear infinite;
+        animation: load 1.2s linear infinite;
+        animation-duration: 3s;
+            
+    } 
+        
+    @-webkit-keyframes load {
+        from {-webkit-transform:rotate(0deg);}
+        to {-webkit-transform:rotate(360deg);}
+    }
+        
+    @keyframes load {
+        from {transform:rotate(0deg);}
+        to {transform:rotate(360deg);}
+    }
+
+    @keyframes timer {
+        0%{
+            opacity: 1;
+            transform: rotateX(0deg);
+            
+          }
+        50%{
+            opacity: 1;
+            transform: rotateX(0deg);
+            
+          }
+        100%{
+            display:none;
+            opacity: 1;
+            transform: rotateX(90deg);
+            
+          }
+        
+    }
+
 }
+
