@@ -1,12 +1,17 @@
 
-
 body {
     display: block;
-    flex-flow: column wrap;
-    text-align: center;
-    justify-content: center;
-    width: 350px;
     margin: 0 auto;
     font-family: roboto;
-    
+    text-align: center;
+    justify-content: center;
+    @include phone{
+        width: 350px;
+    }
+    @include tablet{
+        width: 750px;
+    }
+    @include desktop {
+        width: 850px;
+    }
 }

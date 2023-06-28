@@ -15,6 +15,13 @@ body{
         animation-duration: 3000ms;
         animation-fill-mode: forwards;
         animation-iteration-count: 1;
+        @include tablet {
+            width: 100%;
+        }
+
+        @include desktop {
+            width: 100%;
+        }
             
     }
 
@@ -32,6 +39,13 @@ body{
         -webkit-animation: load 1.2s linear infinite;
         animation: load 1.2s linear infinite;
         animation-duration: 3s;
+        @include tablet {
+            margin-right: 15%;
+        }
+
+        @include desktop {
+            margin-right: 50%;
+        }
             
     } 
         

@@ -2,9 +2,9 @@ $primary: #9356DC;
 $secondary: #FF79DA;
 $tertialy: #99E2D0;
 
+@import "media.scss";
 @import "Base.scss";
 @import "Layouts.scss";
 @import "HomePage.scss";
 @import "MenuPages.scss";
-@import "Utilities.scss";
-@import "media.scss";
+@import "Loader.scss";
