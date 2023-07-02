@@ -1,9 +1,22 @@
 body {
   display: block;
-  flex-flow: column wrap;
-  text-align: center;
-  justify-content: center;
-  width: 350px;
   margin: 0 auto;
   font-family: roboto;
+  text-align: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+  body {
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 998px) {
+  body {
+    width: 750px;
+  }
+}
+@media only screen and (min-width: 998px) {
+  body {
+    width: 950px;
+  }
 }/*# sourceMappingURL=Base.css.map */

@@ -49,6 +49,7 @@
                 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
                 cursor: pointer;
                 .backGround{
+                    display: block;
                     position: relative;
                     opacity: 1;
                     bottom: 10px;
@@ -59,6 +60,10 @@
                     border-top-right-radius: 10px;
                     border-bottom-right-radius: 10px;
                     animation: icon-slide 1s forwards;
+                    @include desktop{
+                        left: 70px;
+            
+                    }
                     .checkIcon{
                         font-size: larger;
                         color: $tertialy;
@@ -73,27 +78,55 @@
                 }
                 div{
                     width: 90%;
+                    
                     .description{
                         text-overflow: ellipsis;
                         white-space: nowrap;
                         overflow: hidden;
-                        
                         animation: descriptionMove 1s forwards; 
+                        @include desktop{
+                           animation: none;
+                
+                        }
+                        @include tablet{
+                            animation: none;
+                            
+                        }  
                         
                     }
                     .money{
                         animation: moneyMove 1s forwards;
+                        margin-right: 5px;
                     }
                 }    
                        
             }
 
             .backGround{
-                opacity: 0;
-            }
-            .checkIcon {
-                display: inline-block;
-              }
+                position: relative;
+                bottom: 10px;
+                left: 85px;
+                height: fit-content;
+                background-color: $tertialy;
+                padding: 21px;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                animation: icon-slide-back 1s backwards ;
+                @include desktop{
+                    left: 95px;
+        
+                }
+                .checkIcon {
+                    display: inline-block;
+                    font-size: larger;
+                    color: $tertialy;
+                    background-color: white;
+                    border-radius: 50%;
+                    padding-left: 8px;
+                    padding-right: 8px;
+                    animation: checkmark-spin-back 1s linear 1 ;  
+                }
+            } 
             div{
                 width: 90%;
                 .description{
@@ -101,6 +134,14 @@
                     white-space: nowrap;
                     overflow: hidden;
                     max-width:250px;
+                    @include desktop{
+                        max-width:400px;
+            
+                    }
+                    @include tablet{
+                        max-width:400px;
+            
+                    }
                       
                 }
 
@@ -108,7 +149,8 @@
                     float: right;
                     position: relative;
                     bottom: 25px;
-                    margin-right: 5px;
+                    margin-right: -45px;
+                    animation: moneyMoveBack 1s backwards;
                 }
             }
             
@@ -166,6 +208,20 @@
         to {transform:rotate(360deg);}
     }
 
+    @keyframes icon-slide-back {
+        0% {
+            transform: translateX(-75px);  
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+
+    @keyframes checkmark-spin-back {
+        from {transform:rotate(360deg);}
+        to {transform:rotate(0);}
+    }
+
     @keyframes moneyMove {
         0% {
             transform: translateX(100%);  
@@ -174,10 +230,19 @@
             transform: translateX(0);
         }
     }
+    @keyframes moneyMoveBack {
+        0% {
+            transform: translateX(-200%);  
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }
 
     @keyframes descriptionMove {
         0% {
-            width: 250px;  
+            width: 250px;
+              
         }
         100% {
             width: 200px;

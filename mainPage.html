@@ -13,36 +13,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <script>
-        window.addEventListener("load", () => {
-            document.querySelector(".loader").classList.add("loader--hidden");
-        });
-    </script>
 </head>
+
 <body>
+    <div class="loader"></div>
     <header>
         <a href="mainPage.html"><img class="imgHeader" src="images/logo/ohmyfood.png" alt="logo"></a>
-        <div class="location"><i class="fa-sharp fa-solid fa-location-dot"></i>Paris, Belleville</div>
-        <div class="discover">
-            <h2>Book the menu you like</h2>
-            <div>Discover top-of-the-art restaurants we picked for you </div>
-            <button class="exploreBt">Explore our restaurants</button>
+        <div class="mainInfo">
+            <div class="locationInfo">
+                <div class="location"><i class="fa-sharp fa-solid fa-location-dot"></i>Paris, Belleville</div>
+                <div class="discover">
+                    <h2>Book the menu you like</h2>
+                    <div>Discover top-of-the-art restaurants we picked for you </div>
+                    <button class="exploreBt">Explore our restaurants</button>
+                </div>
+            </div>
+            <div class="howItWorks">
+                <h2>How it works</h2>
+                <div><span class="number">1</span><button> <i class="fa-solid fa-mobile-screen-button"></i>Chose a restaurant</button></div>
+                <div><span class="number">2</span><button> <i class="fa-solid fa-list-ul"></i>Create my menu</button></div>
+                <div><span class="number">3</span><button> <i class="fa-solid fa-store"></i>Go enjoy it at the restaurant </button></div>
+            </div>
         </div>
     </header>
     
-    <div class="howItWorks">
-        <h2>How it works</h2>
-        <div><span class="number">1</span><button> <i class="fa-solid fa-mobile-screen-button"></i>Chose a restaurant</button></div>
-        <div><span class="number">2</span><button> <i class="fa-solid fa-list-ul"></i>Create my menu</button></div>
-        <div><span class="number">3</span><button> <i class="fa-solid fa-store"></i>Go enjoy it at the restaurant </button></div>
-    </div>
+    
     <div class="restaurantSection">
-        <div class="loader "></div>
         <h2>Restaurants</h2>
+        <div class="restaurants">
         <a href="theFullPallette.html" class="card">
             <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurantImg" class="imgRestaurant">
             <div class="container">
-              <p><strong class="RestaurantName">The Full Pallette</strong><br>New York<strong><i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart"></i></strong>></p>
+              <p><strong class="RestaurantName">The Full Pallette</strong><br>New York<strong><i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart"></i></strong></p>
             </div>   
         </a>
         <a href="theEnchantedPlate.html" class="card">
@@ -63,7 +65,7 @@
               <p><strong class="RestaurantName">Le Gourmand</strong><br>New York<strong><i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart"></i></strong></p>
             </div>   
         </a>
-
+        </div>
     </div>
     <footer>
         <a href="mainPage.html"><img class="imgFooter" src="images/logo/ohmyfood.png" alt="logo"></a>
