@@ -1,12 +1,13 @@
 .menuSection{
-    width: 100%;
+    box-sizing: content-box;
+    width: 90%;
     position: relative;
     bottom: 30px;
     text-align: left;
     background-color: rgb(247, 247, 247);
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
-    padding: 20px;
+    padding: 5%;
     margin-bottom: -30px;
     
     

@@ -6,13 +6,26 @@ align-content: center;
 font-weight: bolder;
 row-gap: 20px;
 background-color: rgb(245, 245, 245);
-padding-bottom: 60px;
+margin: auto;
+
 
 h2{
-    text-align: left !important; 
+    text-align:justify; 
     padding-top: 40px;
     margin-bottom: -5px;
     margin: 2.5%;
+    @include phone {
+        padding-left: 18%; 
+         
+    }
+    @include tablet {
+        padding-left: 7.5%; 
+         
+    }
+    @include desktop {
+        padding-left: 7.5%; 
+         
+    }
     
     }
 
@@ -26,7 +39,8 @@ h2{
     padding-bottom: 60px;
 @include phone {
     flex-flow: column wrap; 
-    flex-basis: 350px;   
+    min-width: 300px;
+     
 }
 @include tablet {
     flex-flow: row wrap;
@@ -50,7 +64,9 @@ h2{
 
 
 .card {
-    width: 300px;
+    width: 60%;
+    max-width: 300px;
+    min-width: 200px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     background-color: white;  
@@ -67,7 +83,9 @@ h2{
     
 
     .imgRestaurant{
-        width: 300px;
+        width: 100%;
+        max-width: 300px;
+        min-width: 200px;
         height: 150px;
         object-fit: cover;
         object-position: 0% 60% ;

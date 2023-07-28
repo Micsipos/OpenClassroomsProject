@@ -6,12 +6,14 @@ body {
     text-align: center;
     justify-content: center;
     @include phone{
-        width: 350px;
+        width: 100%;
     }
     @include tablet{
-        width: 750px;
+        width: 100%;
+        max-width: 850px;
     }
     @include desktop {
-        width: 850px;
+        width: 100%;
+        max-width: 850px;
     }
 }
