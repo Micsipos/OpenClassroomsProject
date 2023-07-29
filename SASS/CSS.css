@@ -4,6 +4,7 @@ body {
   font-family: roboto;
   text-align: center;
   justify-content: center;
+  min-width: 300px;
 }
 @media only screen and (max-width: 768px) {
   body {
@@ -25,6 +26,8 @@ body {
 
 header {
   display: inline-block;
+  max-width: 850px;
+  width: 100%;
 }
 header .imgHeader {
   width: 200px;
@@ -40,7 +43,6 @@ header .imgHeader {
 }
 @media only screen and (min-width: 998px) {
   header .mainInfo {
-    margin-left: -85px;
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 5%;
@@ -104,11 +106,9 @@ header .fa-arrow-left-long {
 header .restaurantImg {
   -o-object-fit: cover;
      object-fit: cover;
-  max-width: 100%;
-  min-width: none;
-  height: 5%;
-  -o-object-position: 0% 65%;
-     object-position: 0% 65%;
+  width: 100%;
+  height: auto;
+  max-height: 300px;
 }
 header .howItWorks {
   text-align: left;

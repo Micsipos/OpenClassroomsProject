@@ -1,5 +1,8 @@
 header {
     display: inline-block;
+    max-width: 850px;
+    width: 100%;
+    
 
     .imgHeader{
         width: 200px;
@@ -16,7 +19,6 @@ header {
         }
 
         @include desktop {
-            margin-left: -85px;
             display: grid;
             grid-template-columns: 50% 50%;
             gap: 5%;
@@ -91,10 +93,11 @@ header {
 
     .restaurantImg{
         object-fit: cover;
-        max-width: 100%;
-        min-width: none;
-        height: 5%;
-        object-position: 0% 65% ;
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+           
+        
     }
     .howItWorks {
             
