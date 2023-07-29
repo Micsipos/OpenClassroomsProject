@@ -341,6 +341,15 @@ footer .contact {
 }
 .restaurantSection .restaurants .card .container *:hover > .fa-solid {
   display: inline-block;
+  animation: heartAnimation 1s ease-in-out;
+}
+@keyframes heartAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .menuSection {

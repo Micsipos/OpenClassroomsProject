@@ -119,14 +119,29 @@ h2{
             float: right;
             margin-right: 20px;
             color: $primary;
+           
         }
         * > .fa-solid,
         *:hover > .fa-regular {
         display: none;
+        
         }
         *:hover > .fa-solid {
         display: inline-block;
+        animation: heartAnimation 1s ease-in-out;;
         }
+        @keyframes heartAnimation {
+            0%{
+                opacity: 0;
+                
+                
+              }
+            100%{
+                opacity: 1;
+            }
+        } 
+
+       
     }
 
 }
