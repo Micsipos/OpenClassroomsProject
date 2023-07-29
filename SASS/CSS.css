@@ -147,6 +147,7 @@ header .howItWorks button .fa-solid {
 
 footer {
   max-width: 850px;
+  min-width: 300px;
   padding: 15px;
   display: flex;
   box-sizing: border-box;
@@ -218,6 +219,7 @@ footer .contact {
   row-gap: 20px;
   background-color: rgb(245, 245, 245);
   margin: auto;
+  min-width: 300px;
 }
 .restaurantSection h2 {
   text-align: justify;
